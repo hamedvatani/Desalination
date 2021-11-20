@@ -16,7 +16,7 @@ namespace Desalination
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmSplash());
+            Application.Run(new frmMain1());
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain2));
             this.WL80 = new System.Windows.Forms.TextBox();
             this.WL50 = new System.Windows.Forms.TextBox();
             this.WL15 = new System.Windows.Forms.TextBox();
@@ -118,6 +119,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.WD = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.btnClose = new System.Windows.Forms.Button();
             this.tabPage9.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -1176,15 +1178,30 @@
             this.tabControl1.Size = new System.Drawing.Size(828, 410);
             this.tabControl1.TabIndex = 2;
             // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.Font = new System.Drawing.Font("B Nazanin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnClose.Location = new System.Drawing.Point(32, 441);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(112, 33);
+            this.btnClose.TabIndex = 4;
+            this.btnClose.Text = "بستن";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // frmMain2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(852, 488);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("B Nazanin", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmMain2";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -1296,5 +1313,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox WD;
         private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.Button btnClose;
     }
 }

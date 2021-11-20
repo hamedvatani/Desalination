@@ -141,5 +141,10 @@ namespace Desalination
             frmSplash frm = new frmSplash();
             frm.ShowDialog();
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

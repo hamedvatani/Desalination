@@ -17,9 +17,8 @@ namespace Desalination
     {
         private string[] inputParameters =
         {
-            "WD", "WS", "ALPHA", "W", "W5", "W15", "W50", "W80", "WL5", "WL15", "WL50", "WL80", "CWS", "CO", "CK", "CW",
-            "CW5", "CW15", "CW50", "CW80", "CWH", "WHZ", "WHF", "RW5", "RW15", "RW50", "RW80", "RWH", "T4", "WLH", "O",
-            "K"
+            "WD", "WS", "ALPHA", "W", "W5", "W15", "W50", "W80", "WL5", "WL15", "WL50", "WL80", "CWS", "CW5", "CW15",
+            "CW50", "CW80", "CWH", "WHZ", "WHF", "RW5", "RW15", "RW50", "RW80", "RWH", "WLH"
         };
 
         private string[] outputParameters =
@@ -67,6 +66,13 @@ namespace Desalination
             }
 
             sw.WriteLine();
+            sw.WriteLine();
+            sw.WriteLine("O = WS;");
+            sw.WriteLine("K = WS;");
+            sw.WriteLine("CO = 0;");
+            sw.WriteLine("CK = 0;");
+            sw.WriteLine("T4 = 100;");
+            sw.WriteLine("CW = 0;");
             sw.WriteLine();
             sw.WriteLine("F5.UP=100000;");
             sw.WriteLine("F15.UP=100000;");

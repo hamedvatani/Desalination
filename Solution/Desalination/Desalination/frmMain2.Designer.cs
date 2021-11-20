@@ -50,7 +50,6 @@
             this.RW80 = new System.Windows.Forms.TextBox();
             this.RW50 = new System.Windows.Forms.TextBox();
             this.RW15 = new System.Windows.Forms.TextBox();
-            this.label43 = new System.Windows.Forms.Label();
             this.RW5 = new System.Windows.Forms.TextBox();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.label64 = new System.Windows.Forms.Label();
@@ -76,7 +75,6 @@
             this.CW5 = new System.Windows.Forms.TextBox();
             this.CW15 = new System.Windows.Forms.TextBox();
             this.CW50 = new System.Windows.Forms.TextBox();
-            this.CW = new System.Windows.Forms.TextBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label58 = new System.Windows.Forms.Label();
@@ -109,16 +107,6 @@
             this.XWD = new System.Windows.Forms.TextBox();
             this.label55 = new System.Windows.Forms.Label();
             this.Z = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.K = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.O = new System.Windows.Forms.TextBox();
-            this.label73 = new System.Windows.Forms.Label();
-            this.T4 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.CK = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.CO = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.CWS = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -372,16 +360,6 @@
             this.RW15.Text = "3500";
             this.RW15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label43
-            // 
-            this.label43.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(567, 60);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(190, 24);
-            this.label43.TabIndex = 3;
-            this.label43.Text = "هزینه تولید هر لیتر آب بسته بندی :";
-            // 
             // RW5
             // 
             this.RW5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -435,7 +413,6 @@
             this.XWH.ReadOnly = true;
             this.XWH.Size = new System.Drawing.Size(100, 31);
             this.XWH.TabIndex = 14;
-            this.XWH.Text = "300";
             this.XWH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label62
@@ -603,11 +580,11 @@
             // 
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(165, 8);
+            this.label19.Location = new System.Drawing.Point(149, 8);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(38, 24);
+            this.label19.Size = new System.Drawing.Size(71, 24);
             this.label19.TabIndex = 19;
-            this.label19.Text = "قیمت";
+            this.label19.Text = "قیمت فروش";
             // 
             // CW80
             // 
@@ -624,11 +601,11 @@
             // 
             this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(255, 8);
+            this.label18.Location = new System.Drawing.Point(260, 8);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(96, 24);
+            this.label18.Size = new System.Drawing.Size(87, 24);
             this.label18.TabIndex = 14;
-            this.label18.Text = "هزینه بسته بندی";
+            this.label18.Text = "قیمت تمام شده";
             // 
             // CW5
             // 
@@ -663,22 +640,9 @@
             this.CW50.Text = "400";
             this.CW50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // CW
-            // 
-            this.CW.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CW.Location = new System.Drawing.Point(461, 57);
-            this.CW.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CW.Name = "CW";
-            this.CW.Size = new System.Drawing.Size(100, 31);
-            this.CW.TabIndex = 4;
-            this.CW.Text = "450";
-            this.CW.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // tabPage8
             // 
             this.tabPage8.BackColor = System.Drawing.Color.LightBlue;
-            this.tabPage8.Controls.Add(this.label43);
-            this.tabPage8.Controls.Add(this.CW);
             this.tabPage8.Controls.Add(this.tableLayoutPanel4);
             this.tabPage8.Controls.Add(this.label58);
             this.tabPage8.Controls.Add(this.label21);
@@ -957,16 +921,6 @@
             this.tabPage7.Controls.Add(this.XWD);
             this.tabPage7.Controls.Add(this.label55);
             this.tabPage7.Controls.Add(this.Z);
-            this.tabPage7.Controls.Add(this.label5);
-            this.tabPage7.Controls.Add(this.K);
-            this.tabPage7.Controls.Add(this.label4);
-            this.tabPage7.Controls.Add(this.O);
-            this.tabPage7.Controls.Add(this.label73);
-            this.tabPage7.Controls.Add(this.T4);
-            this.tabPage7.Controls.Add(this.label25);
-            this.tabPage7.Controls.Add(this.CK);
-            this.tabPage7.Controls.Add(this.label26);
-            this.tabPage7.Controls.Add(this.CO);
             this.tabPage7.Controls.Add(this.label27);
             this.tabPage7.Controls.Add(this.CWS);
             this.tabPage7.Controls.Add(this.label1);
@@ -1099,111 +1053,6 @@
             this.Z.Size = new System.Drawing.Size(100, 31);
             this.Z.TabIndex = 45;
             this.Z.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(568, 333);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(193, 24);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "حداکثر ظرفیت تزریق کلر در هر روز :";
-            // 
-            // K
-            // 
-            this.K.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.K.Location = new System.Drawing.Point(462, 330);
-            this.K.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.K.Name = "K";
-            this.K.Size = new System.Drawing.Size(100, 31);
-            this.K.TabIndex = 19;
-            this.K.Text = "400";
-            this.K.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(568, 294);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(203, 24);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "حداکثر ظرفیت تزریق اوزون در هر روز :";
-            // 
-            // O
-            // 
-            this.O.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.O.Location = new System.Drawing.Point(462, 291);
-            this.O.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.O.Name = "O";
-            this.O.Size = new System.Drawing.Size(100, 31);
-            this.O.TabIndex = 17;
-            this.O.Text = "400";
-            this.O.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label73
-            // 
-            this.label73.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(568, 255);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(126, 24);
-            this.label73.TabIndex = 14;
-            this.label73.Text = "راندمان آب بسته‌بندی :";
-            // 
-            // T4
-            // 
-            this.T4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.T4.Location = new System.Drawing.Point(462, 252);
-            this.T4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.T4.Name = "T4";
-            this.T4.Size = new System.Drawing.Size(100, 31);
-            this.T4.TabIndex = 15;
-            this.T4.Text = "70";
-            this.T4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label25
-            // 
-            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(568, 216);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(161, 24);
-            this.label25.TabIndex = 12;
-            this.label25.Text = "هزینه تزریق کلر برای هر لیتر :";
-            // 
-            // CK
-            // 
-            this.CK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CK.Location = new System.Drawing.Point(462, 213);
-            this.CK.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CK.Name = "CK";
-            this.CK.Size = new System.Drawing.Size(100, 31);
-            this.CK.TabIndex = 13;
-            this.CK.Text = "18";
-            this.CK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label26
-            // 
-            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(568, 177);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(171, 24);
-            this.label26.TabIndex = 10;
-            this.label26.Text = "هزینه تزریق اوزون برای هر لیتر :";
-            // 
-            // CO
-            // 
-            this.CO.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CO.Location = new System.Drawing.Point(462, 174);
-            this.CO.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CO.Name = "CO";
-            this.CO.Size = new System.Drawing.Size(100, 31);
-            this.CO.TabIndex = 11;
-            this.CO.Text = "20";
-            this.CO.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label27
             // 
@@ -1379,7 +1228,6 @@
         private System.Windows.Forms.TextBox RW80;
         private System.Windows.Forms.TextBox RW50;
         private System.Windows.Forms.TextBox RW15;
-        private System.Windows.Forms.Label label43;
         private System.Windows.Forms.TextBox RW5;
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Label label64;
@@ -1405,7 +1253,6 @@
         private System.Windows.Forms.TextBox CW5;
         private System.Windows.Forms.TextBox CW15;
         private System.Windows.Forms.TextBox CW50;
-        private System.Windows.Forms.TextBox CW;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label58;
@@ -1438,16 +1285,6 @@
         private System.Windows.Forms.TextBox XWD;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.TextBox Z;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox K;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox O;
-        private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.TextBox T4;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox CK;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox CO;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox CWS;
         private System.Windows.Forms.Label label1;

@@ -94,7 +94,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.XOW = new System.Windows.Forms.TextBox();
             this.XWDI = new System.Windows.Forms.TextBox();
@@ -102,8 +101,6 @@
             this.XWD = new System.Windows.Forms.TextBox();
             this.label55 = new System.Windows.Forms.Label();
             this.Z = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.CWS = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ALPHA = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -113,6 +110,9 @@
             this.WD = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.btnClose = new System.Windows.Forms.Button();
+            this.Sum = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.tabPage9.SuspendLayout();
             this.tabPage8.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
@@ -369,7 +369,7 @@
             // btnCalculate
             // 
             this.btnCalculate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCalculate.Location = new System.Drawing.Point(770, 306);
+            this.btnCalculate.Location = new System.Drawing.Point(801, 306);
             this.btnCalculate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(131, 31);
@@ -660,6 +660,9 @@
             // tabPage8
             // 
             this.tabPage8.BackColor = System.Drawing.Color.PowderBlue;
+            this.tabPage8.Controls.Add(this.label27);
+            this.tabPage8.Controls.Add(this.label4);
+            this.tabPage8.Controls.Add(this.Sum);
             this.tabPage8.Controls.Add(this.label15);
             this.tabPage8.Controls.Add(this.tableLayoutPanel4);
             this.tabPage8.Controls.Add(this.label21);
@@ -668,7 +671,7 @@
             this.tabPage8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage8.Size = new System.Drawing.Size(902, 255);
+            this.tabPage8.Size = new System.Drawing.Size(933, 255);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "آب بسته بندی";
             // 
@@ -676,7 +679,7 @@
             // 
             this.label15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(444, 20);
+            this.label15.Location = new System.Drawing.Point(475, 20);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(61, 16);
             this.label15.TabIndex = 6;
@@ -722,7 +725,7 @@
             this.tableLayoutPanel4.Controls.Add(this.CW15, 3, 2);
             this.tableLayoutPanel4.Controls.Add(this.CW50, 3, 3);
             this.tableLayoutPanel4.Controls.Add(this.CW80, 3, 4);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(43, 48);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(74, 48);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 5;
@@ -739,7 +742,7 @@
             // 
             this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(633, 20);
+            this.label21.Location = new System.Drawing.Point(664, 20);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(257, 16);
             this.label21.TabIndex = 0;
@@ -748,7 +751,7 @@
             // W
             // 
             this.W.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.W.Location = new System.Drawing.Point(511, 17);
+            this.W.Location = new System.Drawing.Point(542, 17);
             this.W.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.W.Name = "W";
             this.W.Size = new System.Drawing.Size(116, 23);
@@ -760,7 +763,7 @@
             // 
             this.label83.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label83.AutoSize = true;
-            this.label83.Location = new System.Drawing.Point(207, 113);
+            this.label83.Location = new System.Drawing.Point(238, 113);
             this.label83.Name = "label83";
             this.label83.Size = new System.Drawing.Size(148, 16);
             this.label83.TabIndex = 29;
@@ -769,7 +772,7 @@
             // XKH
             // 
             this.XKH.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XKH.Location = new System.Drawing.Point(87, 110);
+            this.XKH.Location = new System.Drawing.Point(118, 110);
             this.XKH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.XKH.Name = "XKH";
             this.XKH.ReadOnly = true;
@@ -781,7 +784,7 @@
             // 
             this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(209, 51);
+            this.label23.Location = new System.Drawing.Point(240, 51);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(229, 16);
             this.label23.TabIndex = 23;
@@ -797,7 +800,6 @@
             this.tabPage7.Controls.Add(this.label9);
             this.tabPage7.Controls.Add(this.label8);
             this.tabPage7.Controls.Add(this.label5);
-            this.tabPage7.Controls.Add(this.label4);
             this.tabPage7.Controls.Add(this.label83);
             this.tabPage7.Controls.Add(this.XKH);
             this.tabPage7.Controls.Add(this.label44);
@@ -808,8 +810,6 @@
             this.tabPage7.Controls.Add(this.XWD);
             this.tabPage7.Controls.Add(this.label55);
             this.tabPage7.Controls.Add(this.Z);
-            this.tabPage7.Controls.Add(this.label27);
-            this.tabPage7.Controls.Add(this.CWS);
             this.tabPage7.Controls.Add(this.label1);
             this.tabPage7.Controls.Add(this.ALPHA);
             this.tabPage7.Controls.Add(this.label3);
@@ -821,7 +821,7 @@
             this.tabPage7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tabPage7.Size = new System.Drawing.Size(902, 255);
+            this.tabPage7.Size = new System.Drawing.Size(933, 255);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "عمومی";
             // 
@@ -829,7 +829,7 @@
             // 
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(20, 113);
+            this.label14.Location = new System.Drawing.Point(51, 113);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(61, 16);
             this.label14.TabIndex = 53;
@@ -839,7 +839,7 @@
             // 
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(20, 82);
+            this.label13.Location = new System.Drawing.Point(51, 82);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(61, 16);
             this.label13.TabIndex = 52;
@@ -849,7 +849,7 @@
             // 
             this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(20, 51);
+            this.label12.Location = new System.Drawing.Point(51, 51);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(61, 16);
             this.label12.TabIndex = 51;
@@ -859,7 +859,7 @@
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(20, 20);
+            this.label10.Location = new System.Drawing.Point(51, 20);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(61, 16);
             this.label10.TabIndex = 50;
@@ -869,7 +869,7 @@
             // 
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(444, 51);
+            this.label9.Location = new System.Drawing.Point(475, 51);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(61, 16);
             this.label9.TabIndex = 49;
@@ -879,7 +879,7 @@
             // 
             this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(469, 82);
+            this.label8.Location = new System.Drawing.Point(500, 82);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(36, 16);
             this.label8.TabIndex = 48;
@@ -889,27 +889,17 @@
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(52, 144);
+            this.label5.Location = new System.Drawing.Point(51, 144);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 16);
+            this.label5.Size = new System.Drawing.Size(63, 16);
             this.label5.TabIndex = 47;
-            this.label5.Text = "ریال";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(469, 113);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 16);
-            this.label4.TabIndex = 46;
-            this.label4.Text = "ریال";
+            this.label5.Text = "ریال در روز";
             // 
             // label44
             // 
             this.label44.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(207, 82);
+            this.label44.Location = new System.Drawing.Point(238, 82);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(180, 16);
             this.label44.TabIndex = 26;
@@ -918,7 +908,7 @@
             // XOW
             // 
             this.XOW.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XOW.Location = new System.Drawing.Point(87, 79);
+            this.XOW.Location = new System.Drawing.Point(118, 79);
             this.XOW.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.XOW.Name = "XOW";
             this.XOW.ReadOnly = true;
@@ -929,7 +919,7 @@
             // XWDI
             // 
             this.XWDI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.XWDI.Location = new System.Drawing.Point(87, 48);
+            this.XWDI.Location = new System.Drawing.Point(118, 48);
             this.XWDI.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.XWDI.Name = "XWDI";
             this.XWDI.ReadOnly = true;
@@ -941,7 +931,7 @@
             // 
             this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(209, 20);
+            this.label20.Location = new System.Drawing.Point(240, 20);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(187, 16);
             this.label20.TabIndex = 20;
@@ -951,7 +941,7 @@
             // 
             this.XWD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.XWD.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.XWD.Location = new System.Drawing.Point(87, 17);
+            this.XWD.Location = new System.Drawing.Point(118, 17);
             this.XWD.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.XWD.Name = "XWD";
             this.XWD.ReadOnly = true;
@@ -963,7 +953,7 @@
             // 
             this.label55.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(209, 144);
+            this.label55.Location = new System.Drawing.Point(240, 144);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(42, 16);
             this.label55.TabIndex = 44;
@@ -972,7 +962,7 @@
             // Z
             // 
             this.Z.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Z.Location = new System.Drawing.Point(87, 141);
+            this.Z.Location = new System.Drawing.Point(118, 141);
             this.Z.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Z.Name = "Z";
             this.Z.ReadOnly = true;
@@ -980,32 +970,11 @@
             this.Z.TabIndex = 45;
             this.Z.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label27
-            // 
-            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(633, 113);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(214, 16);
-            this.label27.TabIndex = 8;
-            this.label27.Text = "هزینه تولید یک متر مکعب آب شیرین :";
-            // 
-            // CWS
-            // 
-            this.CWS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.CWS.Location = new System.Drawing.Point(511, 110);
-            this.CWS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.CWS.Name = "CWS";
-            this.CWS.Size = new System.Drawing.Size(116, 23);
-            this.CWS.TabIndex = 9;
-            this.CWS.Text = "130000";
-            this.CWS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(633, 82);
+            this.label1.Location = new System.Drawing.Point(664, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(180, 16);
             this.label1.TabIndex = 6;
@@ -1014,7 +983,7 @@
             // ALPHA
             // 
             this.ALPHA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ALPHA.Location = new System.Drawing.Point(511, 79);
+            this.ALPHA.Location = new System.Drawing.Point(542, 79);
             this.ALPHA.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ALPHA.Name = "ALPHA";
             this.ALPHA.Size = new System.Drawing.Size(116, 23);
@@ -1026,16 +995,16 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(633, 51);
+            this.label3.Location = new System.Drawing.Point(664, 51);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(253, 16);
+            this.label3.Size = new System.Drawing.Size(219, 16);
             this.label3.TabIndex = 3;
-            this.label3.Text = "حداکثر ظرفیت تولید آب شیرین کن در هر روز :";
+            this.label3.Text = "حداکثر ورودی آب دریا به آب شیرین‌کن :";
             // 
             // WS
             // 
             this.WS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.WS.Location = new System.Drawing.Point(511, 48);
+            this.WS.Location = new System.Drawing.Point(542, 48);
             this.WS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.WS.Name = "WS";
             this.WS.Size = new System.Drawing.Size(116, 23);
@@ -1047,7 +1016,7 @@
             // 
             this.label56.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(444, 20);
+            this.label56.Location = new System.Drawing.Point(475, 20);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(61, 16);
             this.label56.TabIndex = 2;
@@ -1057,7 +1026,7 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(633, 20);
+            this.label2.Location = new System.Drawing.Point(664, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(204, 16);
             this.label2.TabIndex = 0;
@@ -1066,12 +1035,12 @@
             // WD
             // 
             this.WD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.WD.Location = new System.Drawing.Point(511, 17);
+            this.WD.Location = new System.Drawing.Point(542, 17);
             this.WD.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.WD.Name = "WD";
             this.WD.Size = new System.Drawing.Size(116, 23);
             this.WD.TabIndex = 1;
-            this.WD.Text = "86000";
+            this.WD.Text = "90000";
             this.WD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tabControl1
@@ -1087,7 +1056,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.RightToLeftLayout = true;
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(910, 284);
+            this.tabControl1.Size = new System.Drawing.Size(941, 284);
             this.tabControl1.TabIndex = 2;
             // 
             // btnClose
@@ -1102,12 +1071,43 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // Sum
+            // 
+            this.Sum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Sum.Location = new System.Drawing.Point(78, 212);
+            this.Sum.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Sum.Name = "Sum";
+            this.Sum.ReadOnly = true;
+            this.Sum.Size = new System.Drawing.Size(137, 23);
+            this.Sum.TabIndex = 29;
+            this.Sum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(11, 215);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 16);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "متر مکعب";
+            // 
+            // label27
+            // 
+            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(222, 215);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(185, 16);
+            this.label27.TabIndex = 31;
+            this.label27.Text = "جمع آب بسته بندی تولید شده :";
+            // 
             // frmMain2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
-            this.ClientSize = new System.Drawing.Size(938, 350);
+            this.ClientSize = new System.Drawing.Size(969, 350);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.tabControl1);
@@ -1192,8 +1192,6 @@
         private System.Windows.Forms.TextBox XWD;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.TextBox Z;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox CWS;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox ALPHA;
         private System.Windows.Forms.Label label3;
@@ -1203,7 +1201,6 @@
         private System.Windows.Forms.TextBox WD;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -1218,5 +1215,8 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox Sum;
+        private System.Windows.Forms.Label label27;
     }
 }

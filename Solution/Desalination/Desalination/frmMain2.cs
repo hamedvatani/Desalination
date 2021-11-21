@@ -17,13 +17,13 @@ namespace Desalination
     {
         private string[] inputParameters =
         {
-            "WD", "WS", "ALPHA", "W", "W5", "W15", "W50", "W80", "WL5", "WL15", "WL50", "WL80", "CWS", "CW5", "CW15",
-            "CW50", "CW80", "CWH", "WHZ", "WHF", "RW5", "RW15", "RW50", "RW80", "RWH", "WLH"
+            "WD", "WS", "ALPHA", "W", "W5", "W15", "W50", "W80", "WL5", "WL15", "WL50", "WL80", "CW5", "CW15", "CW50",
+            "CW80", "CWH", "WHZ", "WHF", "RW5", "RW15", "RW50", "RW80", "RWH", "WLH"
         };
 
         private string[] m1000InputParameters = {"WD", "WS", "W", "WHZ", "WHF", "WLH"};
 
-        private string[] d1000InputParameters = {"CWS", "CWH", "RWH"};
+        private string[] d1000InputParameters = {"CWH", "RWH"};
 
         private string[] outputParameters = {"Z", "XWDI", "XWD", "XOW", "XKH", "XW5", "XW15", "XWH", "XW50", "XW80"};
 
@@ -82,23 +82,26 @@ namespace Desalination
 
             sw.WriteLine();
             sw.WriteLine();
-            sw.WriteLine("O = WS;");
-            sw.WriteLine("K = WS;");
-            sw.WriteLine("CO = 0;");
-            sw.WriteLine("CK = 0;");
-            sw.WriteLine("T4 = 100;");
-            sw.WriteLine("CW = 0;");
+            sw.WriteLine("O=WS;");
+            sw.WriteLine("K=WS;");
+            sw.WriteLine("CO=0;");
+            sw.WriteLine("CK=0;");
+            sw.WriteLine("T4=100;");
+            sw.WriteLine("CW=0;");
+            sw.WriteLine("CWS=0;");
             sw.WriteLine();
-            sw.WriteLine("F5.UP=100000;");
-            sw.WriteLine("F15.UP=100000;");
             sw.WriteLine();
-            sw.WriteLine("XW50.UP=100000;");
-            sw.WriteLine("XW80.UP=100000;");
+            sw.WriteLine();
+            sw.WriteLine("F5.UP=1000000;");
+            sw.WriteLine("F15.UP=1000000;");
+            sw.WriteLine();
+            sw.WriteLine("XW50.UP=1000000;");
+            sw.WriteLine("XW80.UP=1000000;");
             sw.WriteLine();
             sw.WriteLine();
             sw.WriteLine("OPTION optca=0,optcr=0, RESLIM=50000 ;");
             sw.WriteLine();
-            sw.WriteLine("M=300000;");
+            sw.WriteLine("M=31000000;");
             sw.WriteLine("Solve O_Model Using MIP Maximizing Z;");
             sw.WriteLine();
 
@@ -124,14 +127,30 @@ namespace Desalination
             sr = new StreamReader(result);
             sr.ReadLine();
             sr.ReadLine();
+            double sum = 0;
             foreach (var outputParameter in outputParameters)
             {
                 var line = sr.ReadLine();
                 var d = double.Parse(line.Trim());
+                if (outputParameter == "XW5")
+                    sum = sum + d * 0.5;
+                if (outputParameter == "XW15")
+                    sum = sum + d * 1.5;
+                if (outputParameter == "XW50")
+                    sum = sum + d * 5;
+                if (outputParameter == "XW80")
+                    sum = sum + d * 8;
                 if (d1000OutputParameters.Contains(outputParameter))
                     d = d / 1000;
-                ((TextBox) (Controls.Find(outputParameter, true)[0])).Text = d.ToString();
+                if (outputParameter == "Z")
+                    ((TextBox) (Controls.Find(outputParameter, true)[0])).Text = d.ToString("#,##0");
+                else
+                    ((TextBox) (Controls.Find(outputParameter, true)[0])).Text = d.ToString();
             }
+
+            sum = sum / 1000;
+            Sum.Text = sum.ToString();
+
             sr.Close();
             result.Close();
 

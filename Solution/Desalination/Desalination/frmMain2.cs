@@ -21,10 +21,13 @@ namespace Desalination
             "CW50", "CW80", "CWH", "WHZ", "WHF", "RW5", "RW15", "RW50", "RW80", "RWH", "WLH"
         };
 
-        private string[] outputParameters =
-        {
-            "Z", "XWDI", "XWD", "XSO", "XSK", "XO", "XOW", "XK", "XKH", "XW5", "XW15", "XWH", "XW50", "XW80"
-        };
+        private string[] m1000InputParameters = {"WD", "WS", "W", "WHZ", "WHF", "WLH"};
+
+        private string[] d1000InputParameters = {"CWS", "CWH", "RWH"};
+
+        private string[] outputParameters = {"Z", "XWDI", "XWD", "XOW", "XKH", "XW5", "XW15", "XWH", "XW50", "XW80"};
+
+        private string[] d1000OutputParameters = {"XWD", "XWDI", "XOW", "XKH", "XWH"};
 
         public frmMain2()
         {
@@ -61,8 +64,20 @@ namespace Desalination
 
             foreach (var inputParameter in inputParameters)
             {
-                var s = ((TextBox)(Controls.Find(inputParameter, true)[0])).Text;
-                sw.WriteLine($"{inputParameter}={s};");
+                var s = ((TextBox) (Controls.Find(inputParameter, true)[0])).Text;
+                if (double.TryParse(s, out double d))
+                {
+                    if (m1000InputParameters.Contains(inputParameter))
+                        d = d * 1000;
+                    if (d1000InputParameters.Contains(inputParameter))
+                        d = d / 1000;
+                    sw.WriteLine($"{inputParameter}={d};");
+                }
+                else
+                {
+                    MessageBox.Show("ورودی‌ها باید عددی باشند", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
             }
 
             sw.WriteLine();
@@ -112,7 +127,10 @@ namespace Desalination
             foreach (var outputParameter in outputParameters)
             {
                 var line = sr.ReadLine();
-                ((TextBox)(Controls.Find(outputParameter, true)[0])).Text = line.Trim().Replace(".", "/");
+                var d = double.Parse(line.Trim());
+                if (d1000OutputParameters.Contains(outputParameter))
+                    d = d / 1000;
+                ((TextBox) (Controls.Find(outputParameter, true)[0])).Text = d.ToString();
             }
             sr.Close();
             result.Close();
